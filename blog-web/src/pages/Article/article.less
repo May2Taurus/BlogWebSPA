@@ -1,0 +1,124 @@
+.article {
+  //width:100vw;
+  //height:100vh;
+  //background: url('../../assets/img/74831743_p0.jpeg') center center no-repeat;
+  background-color: #FAFAFA;
+  .content {
+    padding-top: 1.5rem;
+    .left {
+      .article-item {
+        margin-bottom: .5rem;
+        box-shadow:0 0 10px rgba(0, 0, 3, 0.4);
+        border-radius: 5px;
+        padding: 0; // 消除antd中的默认样式
+        // 左侧图像
+        .article-img {
+          padding: .4rem;
+        }
+        // 右侧主体部分
+        .article-main {
+          padding: .2rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          // 文章标题
+          .article-title {
+            height: 1rem;
+            line-height: 1rem;
+            text-align: center;
+            a {
+              // 调整字体
+              color: black;
+              font-size: .4rem;
+              font-family: STHeiti, serif;
+            }
+          }
+          // 文章查看数、评论数和发表时间
+          .article-attribute {
+            display: flex;
+            justify-content: left;
+            .view {
+              color: #5EAEF6;
+            }
+            .comment {
+              color: #F44336;
+            }
+            .time {
+              color: #9E9E9E;
+            }
+            .article-attribute-content {
+              margin-right: .5rem;
+            }
+            .article-attribute-content-icon {
+              margin-right: .1rem;
+            }
+          }
+          // 文章类别、标签信息
+          .article-message {
+            display: flex;
+            justify-content: left;
+            .article-message-content {
+              margin-right: .5rem;
+              font-size: .3rem;
+              .article-message-content-icon {
+                margin-right: .1rem;
+              }
+            }
+            // 文章类别，标明特殊颜色
+            .article-type {
+              color: #00E676;
+            }
+          }
+        }
+      }
+    }
+    .right {
+      .author {
+        // 子元素布局
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // 整体样式
+        height: 6rem;
+        width: 4.5rem;
+        box-shadow:0 0 10px rgba(0, 0, 0, 0.3);
+        border-radius:5px;
+        padding: .2rem;
+        .author-avatar {
+          margin-top: .2rem;
+          box-shadow:0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .author-text {
+          margin-top: .3rem;
+          font-size: 14px;
+        }
+        .author-button {
+          margin-top: .3rem;
+          height: .6rem;
+          width: 2rem;
+          text-align: center;
+          line-height: .6rem;
+          border-radius:25px;
+          color: #e1f0ff;
+          font-size: 12px;
+          background-color: orange;
+        }
+        .author-divider {
+          margin-top: .2rem;
+          line-height: 40px;
+          height: 20px;
+        }
+        .author-link {
+          display: flex;
+          justify-content: space-around;
+          width: 80%;
+          margin-top: .2rem;
+          font-size: 20px;
+          .link-icon {
+            font-size: .5rem;
+          }
+        }
+      }
+    }
+  }
+}

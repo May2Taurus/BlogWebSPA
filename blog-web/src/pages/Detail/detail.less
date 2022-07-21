@@ -1,0 +1,167 @@
+.article-detail {
+  background-color: #FAFAFA;
+  .article-detail-content {
+    padding-top: 1.5rem;
+    .left {
+      .author {
+        // 子元素布局
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // 整体样式
+        height: 6rem;
+        box-shadow:0 0 10px rgba(0, 0, 0, 0.3);
+        border-radius:5px;
+        padding: .2rem;
+        .author-avatar {
+          margin-top: .2rem;
+          box-shadow:0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .author-text {
+          margin-top: .3rem;
+          font-size: 14px;
+        }
+        .author-button {
+          margin-top: .3rem;
+          height: .6rem;
+          width: 2rem;
+          text-align: center;
+          line-height: .6rem;
+          border-radius:25px;
+          color: #e1f0ff;
+          font-size: 12px;
+          background-color: orange;
+        }
+        .author-divider {
+          margin-top: .2rem;
+          line-height: 40px;
+          height: 20px;
+        }
+        .author-link {
+          display: flex;
+          justify-content: space-around;
+          width: 80%;
+          margin-top: .2rem;
+          font-size: 20px;
+          .link-icon {
+            font-size: .5rem;
+          }
+        }
+      }
+    }
+    .middle {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+      .article-above {
+        .article-title {
+          color: black;
+          font-size: .4rem;
+          font-family: STHeiti, serif;
+          text-align: center;
+          padding: .4rem;
+          //margin-bottom: .2rem;
+        }
+        .article-introduce {
+          color: #848484;
+          font-size: .25rem;
+          padding: 0 .4rem;
+          margin-bottom: .3rem;
+          text-indent: 2em; // 段首缩进两个
+        }
+        .article-img {
+          margin-bottom: .5rem;
+        }
+        .article-attribute {
+          display: flex;
+          justify-content: left;
+          padding: 0 .4rem;
+          font-size: .25rem;
+          .view {
+            color: #5EAEF6;
+          }
+          .comment {
+            color: #F44336;
+          }
+          .time {
+            color: #9E9E9E;
+          }
+          .article-attribute-content {
+            margin-right: .5rem;
+          }
+          .article-attribute-content-icon {
+            margin-right: .1rem;
+          }
+        }
+      }
+      .article-below {
+        font-size: initial;
+        padding: 0 .4rem;
+      }
+      // 文章类别、标签信息
+      .article-message {
+        display: flex;
+        justify-content: left;
+        min-height: .8rem;
+        margin: 0 .4rem .4rem;
+        .article-message-content {
+          margin-right: .5rem;
+          font-size: .3rem;
+          .article-message-content-icon {
+            margin-right: .1rem;
+          }
+        }
+        // 文章类别，标明特殊颜色
+        .article-type {
+          color: #00E676;
+        }
+      }
+    }
+    // 点赞、评论和转发按钮布局
+    .article-action {
+      margin-bottom: .4rem;
+      .article-item {
+        text-align: center;
+        // 按钮大小调整
+        .article-action-button {
+          width: 1rem;
+          height: 1rem;
+          span {
+            font-size: .4rem;
+          }
+        }
+        // 点赞按钮
+        .button-like {
+          background-color: orange;
+        }
+        // 评论按钮
+        .button-comment {
+          background-color: limegreen;
+        }
+        // 分享按钮
+        .button-share {
+          background-color: dodgerblue;
+        }
+      }
+    }
+    .article-comment {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+      padding: .4rem .4rem .1rem .4rem;
+      background-color: white;
+      .comment-text {
+        border: none;
+      }
+      .comment-button {
+        border-radius: 5px;
+        background-color: limegreen;
+      }
+    }
+    .right {
+      box-shadow:0 0 10px rgba(0, 0, 0, 0.3);
+      border-radius:5px;
+      margin: 0 8px;
+      max-height: 5rem;
+      overflow: scroll;
+    }
+  }
+}
